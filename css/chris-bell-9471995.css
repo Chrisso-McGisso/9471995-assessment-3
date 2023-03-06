@@ -2,7 +2,7 @@
  body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size:16px;
-  padding:20px;
+  padding:20px 20px 300px;
  }
 
 
@@ -137,5 +137,48 @@ h2 + .A3-table-striped {
 }
 .fruit-n-veg img {
   max-width:350px;
+  width:100%;
+}
+
+/*  Forms styles */
+.flex-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width:500px;
+  width:100%;
+}
+button {
+  background-color:rgb(18, 143, 122);
+  border:none;
+  border-radius: .5rem;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.75rem 3rem;
+  transition: background-color 0.2s ease-in-out;
+}
+button:hover{
+  background-color:rgb(7, 54, 46);
+  cursor: pointer;
+}
+button {
+  margin:.75rem
+}
+button:first-child,
+button:last-child {
+  margin-right:0;
+  margin-left:0;
+}
+.column-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+  max-width:500px;
+  width:100%;
+}
+.column-form input[type=text]{
+  border: 2px solid #666;
+  padding: 0.5rem 1rem;
   width:100%;
 }
