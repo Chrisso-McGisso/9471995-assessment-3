@@ -1,0 +1,58 @@
+header {
+    /* Scan line effect using linear gradient */
+    align-items: flex-start;
+    background-image: linear-gradient(180deg, #052900 25%, #031400 25%, #031400 50%, #052900 50%, #052900 75%, #031400 75%, #031400 100%);
+    background-size: 8.00px 8.00px;
+    color:lime;
+    display:flex;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 2rem;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+/*  
+    Typewriter effect by Geoff Graham from CSS tricks see: 
+    https://css-tricks.com/snippets/css/typewriter-effect/ 
+*/
+.typewriter h1 {
+    letter-spacing: .15em; /* Adjust as needed */
+    margin-bottom: 0;
+    margin-top: 0;
+    text-shadow: 0px 0px 3px rgba(180, 255, 180, 1);
+    white-space: nowrap; /* Keeps the content on a single line */
+  }
+.typewriter h2 {
+    letter-spacing: .15em; /* Adjust as needed */
+    text-shadow: 0px 0px 2px rgba(180, 255, 180, 1);
+    white-space: nowrap; /* Keeps the content on a single line */
+  }
+.typewriter h3 {
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+    border-right: .15em solid lime; /* The typwriter cursor */
+    letter-spacing: .15em; /* Adjust as needed */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    text-shadow: 0px 0px 2px rgba(180, 255, 180, 1);
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    width:auto;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: lime; }
+  }
+ 
+
+
+  /* END typewriter styles */
+
