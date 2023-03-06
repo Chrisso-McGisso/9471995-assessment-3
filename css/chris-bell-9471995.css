@@ -1,3 +1,11 @@
+
+ body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size:16px;
+  padding:20px;
+ }
+
+
 header {
     /* Scan line effect using linear gradient */
     align-items: flex-start;
@@ -9,6 +17,7 @@ header {
     padding: 2rem;
     justify-content: flex-start;
     flex-direction: column;
+    overflow: hidden;
 }
 
 /*  
@@ -51,8 +60,56 @@ header {
     from, to { border-color: transparent }
     50% { border-color: lime; }
   }
+ /* END typewriter styles */
+
+
+
+/*  TABLE styles here */
  
+ .A3-table-striped {
+  border:none;
+  border-spacing: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  font-size: 1rem;
+  margin: 5rem 0;
+  min-width:500px;
+  width:100%;
+}
+h2 + .A3-table-striped {
+  margin-top:0;
+}
+.A3-table-striped thead tr{
+  border-top-left-radius: 20px;
+  overflow: hidden;
+}
+
+.A3-table-striped th, 
+.A3-table-striped td {
+  padding: .75rem 1rem;
+  width: 50%;
+} 
+/* use nth type selectors so no need to write classes on tr */
+.A3-table-striped tr:nth-of-type(even) {
+  background-color: #f2f2f2;
+}
+.A3-table-striped tr td{
+  border-bottom: 1px solid #cdcdcd;
+}
+.A3-table-striped tr:last-child td{
+  border-bottom: none;
+}
+.A3-table-striped th {
+  background-color:rgb(15, 15, 15);
+  color:rgba(255,255,255,0.9);
+  font-size: 1.25rem;
+  text-align: left;
+}
 
 
-  /* END typewriter styles */
-
+.A3-table-striped th:first-child {
+  border-top-left-radius: 20px;
+}
+.A3-table-striped th:last-child {
+  border-top-right-radius: 20px;
+}
